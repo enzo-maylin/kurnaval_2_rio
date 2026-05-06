@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'widgets/main_layout.dart';
-import '../features/home/pages/home.dart';
+import '../features/calendar/pages/calendar.dart';
+import '../features/news/pages/news.dart';
+import '../features/contact/pages/contact.dart';
+import '../features/info/pages/info.dart';
+import '../features/lexicon/pages/lexicon.dart';
 import 'package:kurnaval_2_rio/core/pages/splash_page.dart';
 import 'package:kurnaval_2_rio/core/app_routes.dart';
 
@@ -34,7 +38,7 @@ final router = GoRouter(
             GoRoute(
               path: AppRoute.calendar.path,
               name: AppRoute.calendar.name,
-              builder: (context, state) => HomePage(),
+              builder: (context, state) => const CalendarPage(),
             ),
           ],
         ),
@@ -44,7 +48,7 @@ final router = GoRouter(
             GoRoute(
               path: AppRoute.news.path,
               name: AppRoute.news.name,
-              builder: (context, state) => HomePage(),
+              builder: (context, state) => const NewsPage(),
             ),
           ],
         ),
@@ -54,7 +58,7 @@ final router = GoRouter(
             GoRoute(
               path: AppRoute.contact.path,
               name: AppRoute.contact.name,
-              builder: (context, state) => HomePage(),
+              builder: (context, state) => const ContactPage(),
             ),
           ],
         ),
@@ -64,7 +68,7 @@ final router = GoRouter(
             GoRoute(
               path: AppRoute.info.path,
               name: AppRoute.info.name,
-              builder: (context, state) => HomePage(),
+              builder: (context, state) => const InfoPage(),
             ),
           ],
         ),
@@ -74,7 +78,7 @@ final router = GoRouter(
             GoRoute(
               path: AppRoute.lexicon.path,
               name: AppRoute.lexicon.name,
-              builder: (context, state) => HomePage(),
+              builder: (context, state) => const LexiconPage(),
             ),
           ],
         ),
