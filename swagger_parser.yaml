@@ -1,0 +1,6 @@
+swagger_parser:
+  schema_path: C:\xampp\htdocs\kurnaval_2_rio_web\var\openapi.yaml
+  output_directory: lib/api_client
+  language: dart
+  json_serializer: json_serializable
+  client_postfix: Client
